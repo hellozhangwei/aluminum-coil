@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Request Fast Aluminum Coil RFQ</title>
+  <meta name="description" content="Send your aluminum coil requirement and email to receive a fast quotation from our sourcing team." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.example.com/contact.html" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body data-page="contact">
+  <div data-include="header"></div>
+  <main class="container page">
+    <h1>Contact / RFQ</h1>
+    <p>Submit your requirement. We will reply quickly.</p>
+    <p class="card">Static site note: replace <strong>your-email@example.com</strong> below with your real inbox to receive messages.</p>
+
+    <form class="rfq-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="hidden" name="_subject" value="New RFQ from Website" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://www.example.com/thanks.html" />
+
+      <label for="email">Your Email</label>
+      <input id="email" type="email" name="customer_email" required placeholder="buyer@company.com" />
+
+      <label for="requirement">Requirement</label>
+      <textarea id="requirement" name="requirement" required rows="7" placeholder="Please share alloy, temper, thickness, width, quantity, destination port, and target delivery time."></textarea>
+
+      <button class="btn" type="submit">Submit RFQ</button>
+    </form>
+  </main>
+  <div data-include="footer"></div>
+  <script src="/include-layout.js"></script>
+</body>
+</html>
