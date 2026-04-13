@@ -1,0 +1,27 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main class="container page">
+  <h1>Contact / RFQ</h1>
+  <p>Send your email and requirement. Our team will reply with a quotation quickly.</p>
+
+  <% if (status === 'success') { %>
+    <p class="alert success">Thank you. Your RFQ has been sent successfully.</p>
+  <% } else if (status === 'missing') { %>
+    <p class="alert error">Please fill in both email and requirement.</p>
+  <% } else if (status === 'config') { %>
+    <p class="alert error">Email service is not configured yet. Please contact admin.</p>
+  <% } else if (status === 'error') { %>
+    <p class="alert error">Failed to send RFQ. Please try again later.</p>
+  <% } %>
+
+  <form class="rfq-form" action="/contact" method="post">
+    <label for="email">Your Email</label>
+    <input id="email" type="email" name="email" required placeholder="buyer@company.com" />
+
+    <label for="requirement">Requirement</label>
+    <textarea id="requirement" name="requirement" required rows="7" placeholder="Please share alloy, temper, thickness, width, quantity, destination port, and target delivery time."></textarea>
+
+    <button class="btn" type="submit">Submit RFQ</button>
+  </form>
+</main>
+<%- include('partials/footer') %>

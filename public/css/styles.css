@@ -1,0 +1,71 @@
+:root {
+  --bg: #f4f6f8;
+  --text: #1f2933;
+  --muted: #52606d;
+  --primary: #1f4f7a;
+  --card: #ffffff;
+  --border: #d9e2ec;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+.nav-wrap { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+.logo { color: var(--primary); font-weight: 700; text-decoration: none; }
+.nav-list { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+.nav-list a { text-decoration: none; color: var(--muted); font-weight: 600; }
+.nav-list a.active, .nav-list a:hover { color: var(--primary); }
+.hero { padding: 4rem 0 2rem; }
+.hero h1 { font-size: 2.2rem; margin-bottom: 0.8rem; }
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.grid-3, .grid-2 { display: grid; gap: 1rem; margin: 2rem auto; }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+.page { padding: 2rem 0; }
+.rfq-form { max-width: 700px; }
+.rfq-form label { font-weight: 600; margin-top: 1rem; display: block; }
+.rfq-form input, .rfq-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-top: 0.4rem;
+}
+.alert { padding: 0.8rem; border-radius: 6px; }
+.alert.success { background: #e3f9e5; color: #207227; }
+.alert.error { background: #ffe3e3; color: #8a1f1f; }
+.site-footer {
+  background: #0f1720;
+  color: #cbd2d9;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+.site-footer a { color: #d9e2ec; text-decoration: none; }
+.footer-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.footer-bottom { text-align: center; padding: 1rem 0; border-top: 1px solid #243b53; margin-top: 1rem; }
