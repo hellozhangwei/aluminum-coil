@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="/" aria-label="Home"><%= companyName %></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a class="<%= currentPath === '/' ? 'active' : '' %>" href="/">Home</a></li>
+        <li><a class="<%= currentPath === '/products' ? 'active' : '' %>" href="/products">Products</a></li>
+        <li><a class="<%= currentPath === '/about' ? 'active' : '' %>" href="/about">About Us</a></li>
+        <li><a class="<%= currentPath === '/sourcing' ? 'active' : '' %>" href="/sourcing">Sourcing Capability</a></li>
+        <li><a class="<%= currentPath === '/contact' ? 'active' : '' %>" href="/contact">Contact / RFQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,16 @@
+{
+  "name": "aluminum-coil-b2b-site",
+  "version": "1.0.0",
+  "description": "Professional B2B aluminum coil trading website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "nodemailer": "^6.9.16"
+  }
+}
